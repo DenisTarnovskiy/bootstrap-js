@@ -1,9 +1,10 @@
 jQuery.noConflict();
 (function( $ ) {
     var phoneNumber = $("#phone");
-    var emailAd = document.getElementById("email");
-    var pass = document.getElementById("pass1");
-    var passConfirm = document.getElementById("pass2");
+    var registerBtn = $("#registerBtn");
+    var emailAd = $("#email");
+    var pass = $("#pass1");
+    var passConfirm = $("#pass2");
     var iAgreeCheck = document.getElementById("field_terms");
     var firebaseRef = firebase.database().ref();
     var inputFile = $("#inputGroupFile01");
@@ -20,10 +21,20 @@ jQuery.noConflict();
         utilsScript: "node_modules/intl-tel-input/build/js/utils.js"
     });
     phoneNumber.on('keyup , countrychange' , function () {
-        validatephone();
+        validatephone(this);
     });
     inputFile.on('focusout' , function () {
         console.log(this.value)
+    });
+    registerBtn.on('click' , function () {
+       registerClick();
+    });
+    emailAd.on('keyup' , function () {
+        email_validate(this.value);
+    });
+    passConfirm.on('keyup' , function () {
+        checkPass();
+        return false;
     });
 
     function registerClick() {
@@ -58,76 +69,49 @@ jQuery.noConflict();
     }
 
     function checkPass() {
-        //Store the password field objects into variables ...
-
-        //Store the Confimation Message Object ...
-        var message = document.getElementById('confirmMessage');
-        //Set the colors we will be using ...
+        var message = $('#confirmMessage');
         var goodColor = "#66cc66";
         var badColor = "#ff6666";
-        //Compare the values in the password field
-        //and the confirmation field
-        if(pass.value == passConfirm.value){
-            //The passwords match.
-            //Set the color to the good color and inform
-            //the user that they have entered the correct password
-            passConfirm.style.backgroundColor = goodColor;
-            message.style.color = goodColor;
-            message.innerHTML = "Passwords Match"
+        if(pass.val() === passConfirm.val()){
+            passConfirm.css('backgroundColor' , goodColor);
+            message.css('color' , goodColor);
+            message.html("Passwords Match")
         }else{
-            //The passwords do not match.
-            //Set the color to the bad color and
-            //notify the user.
-            passConfirm.style.backgroundColor = badColor;
-            message.style.color = badColor;
-            message.innerHTML = "Passwords Do Not Match!"
+            passConfirm.css('backgroundColor' , badColor);
+            message.css('color' , badColor);
+            message.html("Passwords Do Not Match!")
         }
     }
 
-
-    function validatephone() {
-
+    function validatephone(phone) {
         var countryData = InitPhoneMask.iso2;
-
-
         if (countryData === "us" || countryData === "cn"){
             window.alert("fuck y nigggggggger ili kitaec");
-
         }
         var numval = phone.value;
         var curphonevar = numval.replace(/[\\A-Za-z!"£$%^&\,*+_={};:'@#~,.Š\/<>?|`¬\]\[]/g,'');
-        phoneNumber.value = curphonevar;
-        phoneNumber.focus;
+        phone.value = curphonevar;
     }
-    // validates text only
+
     function Validate(txt) {
         txt.value = txt.value.replace(/[^a-zA-Z-'\n\r.]+/g, '');
     }
-    // validate email
-    function email_validate(email) {
 
-        if(regMail.test(email) == false)
-        {
+    function email_validate(email) {
+        if(regMail.test(email) === false){
             document.getElementById("status").innerHTML    = "<span class='warning'>Email address is not valid yet.</span>";
-        }
-        else
-        {
+        }else{
             document.getElementById("status").innerHTML	= "<span class='valid'>Thanks, you have entered a valid Email address!</span>";
         }
     }
     // validate address
-    function add_validate(address) {
-
+    function add_validate() {
         var regAdd = /^(?=.*\d)[a-zA-Z\s\d\/]+$/;
 
-        if(regAdd.test(address) == false)
-        {
+        if(regAdd.test() === false){
             document.getElementById("statusAdd").innerHTML	= "<span class='warning'>Address is not valid yet.</span>";
-        }
-        else
-        {
+        }else{
             document.getElementById("statusAdd").innerHTML	= "<span class='valid'>Thanks, Address looks valid!</span>";
         }
-
     }
 })(jQuery);
