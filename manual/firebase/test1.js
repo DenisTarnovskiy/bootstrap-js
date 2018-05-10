@@ -1,7 +1,6 @@
 
 jQuery.noConflict();
 (function( $ ) {
-    $(function() {
         var registerBtn = document.getElementById("registerBtn");
         var phoneNumber = $("#phone");
         var emailAd = document.getElementById("email");
@@ -117,11 +116,14 @@ jQuery.noConflict();
         function email_validate(email) {
 
             if (regMail.test(email) == false) {
+
                 document.getElementById("status").innerHTML = "<span class='warning'>Email address is not valid yet.</span>";
             }
-            else {
-                document.getElementById("status").innerHTML = "<span class='valid'>Thanks, you have entered a valid Email address!</span>";
-            }
+            else
+                {
+
+                     document.getElementById("status").innerHTML = "<span class='valid'>Thanks, you have entered a valid Email address!</span>";
+                }
         }
 
 // validate address
@@ -135,13 +137,6 @@ jQuery.noConflict();
             else {
                 document.getElementById("statusAdd").innerHTML = "<span class='valid'>Thanks, Address looks valid!</span>";
             }
-
         }
 
-        function nextPage() {
-            location.href = "test1.html";
-        }
-    });
-
-     
 })(jQuery);
