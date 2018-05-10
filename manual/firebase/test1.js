@@ -8,7 +8,12 @@ var firebaseRef = firebase.database().ref();
 var inputFile = $("#inputGroupFile01");
 var regMail = /^([_a-zA-Z0-9-]+)(\.[_a-zA-Z0-9-]+)*@([a-zA-Z0-9-]+\.)+([a-zA-Z]{2,3})$/;
 
-
+jQuery.noConflict();
+(function( $ ) {
+    $(function() {
+        // More code using $ as alias to jQuery
+    });
+})(jQuery);
 
 var InitPhoneMask = phoneNumber.intlTelInput({
     initialCountry: "auto",
@@ -129,5 +134,9 @@ function add_validate(address) {
     {
         document.getElementById("statusAdd").innerHTML	= "<span class='valid'>Thanks, Address looks valid!</span>";
     }
+
+}
+function  nextPage() {
+    location.href="test1.html";
 
 }
