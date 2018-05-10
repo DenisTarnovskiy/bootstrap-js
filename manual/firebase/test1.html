@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="node_modules/intl-tel-input/build/css/intlTelInput.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>:)</title>
+</head>
+<body>
+<h1>Registration user</h1>
+
+
+
+<!------ Include the above in your HEAD tag ---------->
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <form method="post" id="fileForm" role="form">
+                <fieldset><legend class="text-center">Registration new account <span class="req"><small></small></span></legend>
+
+                    <div class="form-group email-phone">
+                        <label for="phone"><span class="req" >* </span> Phone Number: </label>
+
+                        <input type="tel" id="phone" class="form-control phone"/>
+
+                        <label for="email"><span class="req">* </span> Email Address: </label>
+                        <input class="form-control" required="required" type="email" id="email"
+                               onkeyup="email_validate(this.value);"/>
+                        <div class="status" id="status"></div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="pass1"><span class="req">* </span> Password: </label>
+                        <input required="required" name="password" type="password" class="form-control inputpass" minlength="4" maxlength="16"  id="pass1" /> </p>
+
+                        <label for="pass2"><span class="req">* </span> Password Confirm: </label>
+                        <input required name="password" type="password" class="form-control inputpass" minlength="4" maxlength="16" placeholder="Enter again to validate"  id="pass2" onkeyup="checkPass(); return false;" />
+                        <span id="confirmMessage" class="confirmMessage"></span>
+                    </div>
+
+                    <div class="form-group">
+
+                        <?php //$date_entered = date('m/d/Y H:i:s'); ?>
+                        <input type="hidden" value="<?php //echo $date_entered; ?>" name="dateregistered">
+                        <input type="hidden" value="0" name="activate" />
+                        <hr>
+
+                        <input type="checkbox" required="required" name="terms" onchange="this.setCustomValidity(validity.valueMissing ? 'Please indicate that you accept the Terms and Conditions' : '');" id="field_terms">   <label for="field_terms">I agree with the <a href="terms.php" title="You may read our terms and conditions by clicking on this link">terms and conditions</a> for Registration.</label><span class="req">* </span>
+                    </div>
+
+                    <div class="form-group">
+                        <input class="btn btn-success" type="button" name="submit_reg" value="Register" id="registerBtn" onclick="registerClick()">
+                    </div>
+                    <h5>You will receive an email to complete the registration and validation process. </h5>
+                    <h5>Be sure to check your spam folders. </h5>
+
+
+                </fieldset>
+            </form><!-- ends register form -->
+
+            <script type="text/javascript">
+                document.getElementById("field_terms").setCustomValidity("Please indicate that you accept the Terms and Conditions");
+            </script>
+        </div><!-- ends col-6 -->
+
+
+
+    </div>
+</div>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<!-- <script src="/Users/tecsynt_den/bootstrap-js/manual/firebase/libphonenumber-js.min.js"></script> -->
+<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+
+<script src="node_modules/intl-tel-input/build/js/intlTelInput.js"></script>
+
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyAL6wgJ5XxpaHJBWSDgllk7uH1G86UBanw",
+        authDomain: "fir-blockchain.firebaseapp.com",
+        databaseURL: "https://fir-blockchain.firebaseio.com",
+        projectId: "fir-blockchain",
+        storageBucket: "fir-blockchain.appspot.com",
+        messagingSenderId: "1094370143857"
+    };
+    firebase.initializeApp(config);
+</script>
+<script type="text/javascript" src="test1.js"></script>
+</body>
+</html>
+
+<!--<a href="#" onclick="OpenGithubRepo()">Token Wallet Github</a> | Developed by <a href="#" onclick="OpenEugeneGithub()">Eugene Kyselev</a>-->
+<!--function OpenGithubRepo() {-->
+<!--shell.openExternal('https://gitlab.com/eugenekyselev/wallet-to-wallet-mechanism')-->
+<!--}-->

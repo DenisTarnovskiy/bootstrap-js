@@ -70,4 +70,5 @@ function add_validate(address)
     {
         document.getElementById("statusAdd").innerHTML	= "<span class='valid'>Thanks, Address looks valid!</span>";
     }
+
 }
