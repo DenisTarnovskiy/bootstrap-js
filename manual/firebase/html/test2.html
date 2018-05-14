@@ -6,17 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
 
     <title>:)</title>
 </head>
 <body>
-<h1>Registration user p2</h1>
 
+</div>
 <div class="container">
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-8">
             <form action="/ОбработчикФормы.php" method="post" id="fileForm" role="form">
+
+
+                <h1> Upload file</h1>
+
+                    <div class="form-group">
+                        <label class="text-inverse" for="image">Select any files type</label>
+                        <select class="custom-select d-block form-control" id="image" required>
+                                <option value="">Open this select menu</option>
+                                <option value="1">Passport</option>
+                                <option value="2">Id card</option>
+                                <option value="3">Driver's license</option>
+                        </select>
+                            <div
+                                class="invalid-feedback">Please selected any option.
+                            </div>
+                    </div>
 
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
@@ -27,6 +43,9 @@
                         <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
                     </div>
                 </div>
+                <a class="Next step button" href="KYS_3.html">
+                    <button type="button" class="btn btn-secondary btn-lg btn-block" >Next step</button>
+                </a>
 
             </form><!-- ends register form -->
         </div><!-- ends col-6 -->
@@ -37,14 +56,14 @@
 </div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 <!-- <script src="/Users/tecsynt_den/bootstrap-js/manual/firebase/libphonenumber-js.min.js"></script> -->
 <script>
     //alert(new libphonenumber.AsYouType('US').input('213-373-4253'))
 </script>
-<script src="node_modules/intl-tel-input/build/js/intlTelInput.js"></script>
+<script src="../node_modules/intl-tel-input/build/js/intlTelInput.min.js"></script>
 <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
 
 <script>
@@ -59,7 +78,7 @@
     };
     firebase.initializeApp(config);
 </script>
-<script src="test1.js"></script>
+<script src="../js/test1.js"></script>
 
 
 
