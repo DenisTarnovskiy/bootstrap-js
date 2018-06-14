@@ -16,28 +16,57 @@
     <!------ Include the above in your HEAD tag ---------->
 
 <div class="container">
-    <div class="row">
         <div class="col-md-offset-2 col-md-10">
-
 
 
             <div class="row">
                 <p>pick bilet</p>
             </div>
             <div class="row">
-  <span>
-    <input class="basic-slide" id="number" type="text" placeholder="Set Bilet Number" /><label for="number">Number</label>
-  </span>
-                <span>
-    <input class="basic-slide" id="pay" type="text" placeholder="Send ethereum" /><label for="pay">Ether</label>
-  </span>
-            </div>
 
+                    <input class="basic-slide" id="number" type="text" placeholder="Set Bilet Number" /><label for="number">Number</label>
+
+                         <div class="row">
+                                 <input class="text" id="selected ticket" type="text" value="0" /><label for="selected ticket">Selected ticket</label>
+                             </div>
+
+                         <div class="row">
+
+                     <input class="basic-slide" id="pay" type="text" placeholder="Send ethereum" /><label for="pay">Ether</label>
+
+                </div>
+
+
+            </div>
+        </div>
+
+                <div class="row">
+                <span>
+                     <input class="basic-slide" id="pay" type="text" placeholder="Send ethereum" /><label for="pay">Ether</label>
+                </span>
+                </div>
+
+    </div>
         </div><!--md10-->
 
     </div><!---row-->
 
 </div><!--container-->
-    <script src="../js/contractMain.js"></script>
+    <script
+            src="../js/contractMain.js">
+
+    </script>
+
+         <script>
+              if (typeof web3 !== 'undefined') {
+                web3 = new Web3(web3.currentProvider);
+              } else {
+                  // set the provider you want from Web3.providers
+                  web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
+                 }
+                 console.log(web3.currentProvider)
+              web3.eth.defaultAccount = web3.eth.accounts[0];
+
+         </script>
 
 </head>

@@ -1,24 +1,103 @@
 
 import Web3 from "web3";
 
+//
+// if (typeof web3 !== 'undefined') {
+//     web3 = new Web3(web3.currentProvider);
+// } else {
+//     // set the provider you want from Web3.providers
+//     web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
+// }
+// Web3.eth.defaultAccount = Web3.eth.accounts[0];
 
-if (typeof web3 !== 'undefined') {
-    web3 = new Web3(web3.currentProvider);
-} else {
-    // set the provider you want from Web3.providers
-    web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
-}
-Web3.eth.defaultAccount = Web3.eth.accounts[0];
 
-
-    var  contractAddress = ('0x6BdC816cE50F2bC68251f22A8c3bd9a79B7A9A70');
+    var  contractAddress = ('0x4f6719066b6f161580476cd1ab64a9bc690a86ef');
 
 
     var CoursetroContract = web3.eth.contract([
         {
             "constant": true,
+            "inputs": [
+                {
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "name": "lottoNumbers",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
             "inputs": [],
-            "name": "numberOfBets",
+            "name": "maximumBetCall",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [
+                {
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "name": "betPool",
+            "outputs": [
+                {
+                    "name": "bettor",
+                    "type": "address"
+                },
+                {
+                    "name": "selectedNumber",
+                    "type": "uint256"
+                },
+                {
+                    "name": "value",
+                    "type": "uint256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [
+                {
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "name": "resultTable",
+            "outputs": [
+                {
+                    "name": "winNumber",
+                    "type": "uint256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "minimumSpend",
             "outputs": [
                 {
                     "name": "",
@@ -37,53 +116,11 @@ Web3.eth.defaultAccount = Web3.eth.accounts[0];
                     "type": "address"
                 }
             ],
-            "name": "playerTicketsCount",
+            "name": "currentTicketCount",
             "outputs": [
                 {
                     "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "payable": false,
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "constant": true,
-            "inputs": [],
-            "name": "maxAmountOfTickets",
-            "outputs": [
-                {
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "payable": false,
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "constant": true,
-            "inputs": [],
-            "name": "maxAmountOfBets",
-            "outputs": [
-                {
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "payable": false,
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "constant": true,
-            "inputs": [],
-            "name": "range",
-            "outputs": [
-                {
-                    "name": "",
-                    "type": "uint256"
+                    "type": "int256"
                 }
             ],
             "payable": false,
@@ -98,75 +135,101 @@ Web3.eth.defaultAccount = Web3.eth.accounts[0];
                     "type": "uint256"
                 }
             ],
-            "name": "ticketTypes",
-            "outputs": [
-                {
-                    "name": "number",
-                    "type": "uint256"
-                },
-                {
-                    "name": "totalTickets",
-                    "type": "uint256"
-                }
-            ],
-            "payable": false,
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "constant": true,
-            "inputs": [],
-            "name": "totalBet",
+            "name": "winnerAddress",
             "outputs": [
                 {
                     "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "payable": false,
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "anonymous": false,
-            "inputs": [
-                {
-                    "indexed": false,
-                    "name": "winner",
                     "type": "address"
-                },
-                {
-                    "indexed": false,
-                    "name": "winningNumber",
-                    "type": "uint256"
                 }
             ],
-            "name": "Win",
-            "type": "event"
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
         },
         {
-            "constant": false,
-            "inputs": [
+            "constant": true,
+            "inputs": [],
+            "name": "result",
+            "outputs": [
                 {
-                    "name": "_minimumBet",
-                    "type": "uint256"
-                },
-                {
-                    "name": "_maxAmountOfBets",
+                    "name": "winNumber",
                     "type": "uint256"
                 }
             ],
-            "name": "VirtLotto",
-            "outputs": [],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "maximumTicket",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "int256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "owner",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "winNumber",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "name": "_lottoNumbers",
+                    "type": "uint256[]"
+                },
+                {
+                    "name": "_maximumBetCall",
+                    "type": "uint256"
+                },
+                {
+                    "name": "_maximumTicket",
+                    "type": "int256"
+                },
+                {
+                    "name": "_minimumSpend",
+                    "type": "uint256"
+                }
+            ],
             "payable": false,
             "stateMutability": "nonpayable",
-            "type": "function"
+            "type": "constructor"
         },
         {
             "constant": false,
             "inputs": [
                 {
-                    "name": "number",
+                    "name": "selectedNumber",
                     "type": "uint256"
                 }
             ],
@@ -180,11 +243,11 @@ Web3.eth.defaultAccount = Web3.eth.accounts[0];
             "constant": true,
             "inputs": [
                 {
-                    "name": "player",
+                    "name": "bettor",
                     "type": "address"
                 }
             ],
-            "name": "canPlay",
+            "name": "checkValidNumberOfTicket",
             "outputs": [
                 {
                     "name": "",
@@ -198,21 +261,72 @@ Web3.eth.defaultAccount = Web3.eth.accounts[0];
         {
             "constant": false,
             "inputs": [],
-            "name": "draw",
-            "outputs": [
-                {
-                    "name": "",
-                    "type": "uint256"
-                },
-                {
-                    "name": "",
-                    "type": "address[]"
-                }
-            ],
+            "name": "spinAndDistributePrize",
+            "outputs": [],
             "payable": true,
             "stateMutability": "payable",
             "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "getCurrentTotalBet",
+            "outputs": [
+                {
+                    "name": "totalBetAmmount",
+                    "type": "uint256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "getWinner",
+            "outputs": [
+                {
+                    "name": "_winnerAddress",
+                    "type": "address[]"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "getWinNumber",
+            "outputs": [
+                {
+                    "name": "_winNumber",
+                    "type": "uint256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [],
+            "name": "resetResult",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [],
+            "name": "kill",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
         }
     ],);
-    var Loto = CoursetroContract.at('0x6BdC816cE50F2bC68251f22A8c3bd9a79B7A9A70');
+    var Loto = CoursetroContract.at('0x4f6719066b6f161580476cd1ab64a9bc690a86ef');
     console.log(Loto);                                                           
