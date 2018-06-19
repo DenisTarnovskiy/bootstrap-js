@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81876069-a0a1-40da-9511-99e5c0b49f2c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/folder_4_truffle/build/contracts/SimpleStorage.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/folder_4_truffle/build/contracts/fuckThis_VirtLotto.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/folder_4_truffle/contracts/SimpleStorage.sol" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/folder_4_truffle/contracts/fuckThis_VirtLotto.sol" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/folder_4_truffle/build/contracts/Migrations.json" beforeDir="false" afterPath="$PROJECT_DIR$/folder_4_truffle/build/contracts/Migrations.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/folder_4_truffle/build/contracts/VirtLotto_3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/folder_4_truffle/contracts/Lotto.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/folder_4_truffle/contracts/Migrations.sol" beforeDir="false" afterPath="$PROJECT_DIR$/folder_4_truffle/contracts/Migrations.sol" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/TEST_TEST.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/TEST_TEST.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/test_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/test_5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/contractMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/contractMain.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -30,8 +22,8 @@
       <file leaf-file-name="test_5.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/test_5.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+            <state relative-caret-position="165">
+              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -39,38 +31,37 @@
       <file leaf-file-name="web3.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node_modules/web3/lib/web3.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="632">
-              <caret line="54" column="23" selection-start-line="54" selection-start-column="15" selection-end-line="54" selection-end-column="23" />
+            <state relative-caret-position="416">
+              <caret line="68" column="28" selection-start-line="68" selection-start-column="28" selection-end-line="68" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TEST_TEST.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="httpprovider.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/web3/lib/web3/httpprovider.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1097">
+              <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TEST_TEST.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/TEST_TEST.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="52" column="23" lean-forward="true" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
+            <state relative-caret-position="368">
+              <caret line="84" column="3369" selection-start-line="84" selection-start-column="3357" selection-end-line="84" selection-end-column="3369" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="truffle-config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/folder_4_truffle/truffle-config.js">
+      <file leaf-file-name="contractMain.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/contractMain.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="2" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
+            <state relative-caret-position="112">
+              <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fuckThis_VirtLotto.sol" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/folder_4_truffle/contracts/fuckThis_VirtLotto.sol">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="fuckThis_VirtLotto.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/folder_4_truffle/build/contracts/fuckThis_VirtLotto.json">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="kys.js" pinned="false" current-in-tab="false">
@@ -82,29 +73,38 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="fuckThis_VirtLotto.sol" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/folder_4_truffle/contracts/fuckThis_VirtLotto.sol">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="132" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="2" lean-forward="true" selection-start-line="1" selection-end-line="2" />
+            <state relative-caret-position="578">
+              <caret line="205" column="5" selection-start-line="205" selection-start-column="5" selection-end-line="205" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+      <file leaf-file-name="test1.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/test1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="45">
+              <caret line="3" column="35" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contractMain.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/contractMain.js">
+      <file leaf-file-name="test2.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/test2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="320" column="9" lean-forward="true" selection-start-line="320" selection-start-column="9" selection-end-line="320" selection-end-column="9" />
+            <state relative-caret-position="105">
+              <caret line="7" column="7" selection-start-line="7" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -125,6 +125,7 @@
     <findStrings>
       <find>agg</find>
       <find>consol</find>
+      <find>get</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -174,10 +175,10 @@
         <option value="$PROJECT_DIR$/js/contractMain" />
         <option value="$PROJECT_DIR$/js/test2.js" />
         <option value="$PROJECT_DIR$/css/TEST_TEST.css" />
-        <option value="$PROJECT_DIR$/js/config.js" />
         <option value="$PROJECT_DIR$/html/test_5.html" />
-        <option value="$PROJECT_DIR$/js/contractMain.js" />
+        <option value="$PROJECT_DIR$/js/config.js" />
         <option value="$PROJECT_DIR$/html/TEST_TEST.html" />
+        <option value="$PROJECT_DIR$/js/contractMain.js" />
       </list>
     </option>
   </component>
@@ -197,11 +198,11 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="152" />
-    <option name="y" value="48" />
-    <option name="width" value="1174" />
-    <option name="height" value="785" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="1440" />
+    <option name="y" value="-180" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -353,12 +354,12 @@
       <workItem from="1526585388464" duration="488000" />
       <workItem from="1527074581350" duration="3393000" />
       <workItem from="1527156715259" duration="16771000" />
-      <workItem from="1528204591870" duration="27795000" />
+      <workItem from="1528204591870" duration="49724000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94709000" />
+    <option name="totallyTimeSpent" value="116638000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -370,10 +371,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="152" y="48" width="1174" height="785" extended-state="0" />
+    <frame x="1440" y="-180" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6503497" visible="true" weight="0.21769297" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6503497" visible="true" weight="0.13217483" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49943247" weight="0.3287037" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5115115" side_tool="true" weight="0.30959302" />
@@ -383,7 +384,7 @@
       <window_info id="npm" order="2" sideWeight="0.34965035" side_tool="true" weight="0.2122588" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4884885" weight="0.30959302" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.27363184" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -399,7 +400,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6503497" visible="true" weight="0.21769297" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6503497" visible="true" weight="0.19044006" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49943247" weight="0.3287037" />
@@ -425,13 +426,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/intl-tel-input/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3204">
@@ -559,24 +553,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/test1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/payAccount_4.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/test2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -624,27 +604,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/kys.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/web3/lib/web3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="632">
-          <caret line="54" column="23" selection-start-line="54" selection-start-column="15" selection-end-line="54" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="2" lean-forward="true" selection-start-line="1" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/folder_4_truffle/contracts/Lotto.sol">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -659,30 +618,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/folder_4_truffle/contracts/fuckThis_VirtLotto.sol">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/folder_4_truffle/build/contracts/fuckThis_VirtLotto.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/test_5.html">
+    <entry file="file://$PROJECT_DIR$/node_modules/web3/lib/web3.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="416">
+          <caret line="68" column="28" selection-start-line="68" selection-start-column="28" selection-end-line="68" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/contractMain.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/web3/lib/web3/httpprovider.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="320" column="9" lean-forward="true" selection-start-line="320" selection-start-column="9" selection-end-line="320" selection-end-column="9" />
+        <state relative-caret-position="-1097">
+          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/folder_4_truffle/contracts/fuckThis_VirtLotto.sol">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="132" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/kys.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/test_5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/test2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="7" selection-start-line="7" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/test1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="35" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="205" column="5" selection-start-line="205" selection-start-column="5" selection-end-line="205" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/TEST_TEST.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="52" column="23" lean-forward="true" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
+        <state relative-caret-position="368">
+          <caret line="84" column="3369" selection-start-line="84" selection-start-column="3357" selection-end-line="84" selection-end-column="3369" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/contractMain.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
         </state>
       </provider>
     </entry>
